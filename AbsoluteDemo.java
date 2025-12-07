@@ -1,4 +1,4 @@
-
+//absolute number
 public class AbsoluteDemo {
 
 	public static void main(String[] args) {
