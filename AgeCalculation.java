@@ -15,9 +15,9 @@ public class AgeCalculation {
 		} else if (age >= 20 && age <= 40) {
 			System.out.println("Youngster");
 		} else if (age >= 41 && age <= 55) {
-			System.out.println("aged");
+			System.out.println("aged person");
 		} else if (age >=56) {
-			System.out.println("old");
+			System.out.println("old person");
 		} else {
 			System.out.println("Invalid age enter");
 		}
