@@ -24,6 +24,7 @@ public class Primeno_or_not {
 			System.out.println(number + ".is not prime number");
 
 		}
+		scn.close();
 
 	}
 
