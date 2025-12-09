@@ -26,6 +26,7 @@ public class Billdiscount {
 		else {
 			System.out.println("Payable amount is: "+amount);
 		}
+		scn.close();
 	
 
 	}
