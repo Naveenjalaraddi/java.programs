@@ -21,6 +21,7 @@ public class AgeCalculation {
 		} else {
 			System.out.println("Invalid age enter");
 		}
+		scn.close();
 
 	}
 
