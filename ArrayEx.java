@@ -25,6 +25,7 @@ public class ArrayEx {
 			System.out.println(+j + ".element: " + arra[j]);
 
 		}
+		scn.close();
 	}
 
 }
