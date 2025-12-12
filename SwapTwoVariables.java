@@ -1,5 +1,5 @@
 
-public class Swaptovar {
+public class SwapTwoVariables {
 
 	public static void main(String[] args) {
 		// with 3rd variable
