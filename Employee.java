@@ -1,53 +1,37 @@
-package oopsconceptsprograms;
 
-import java.util.Scanner;
+/*   Assignment-2. 
 
-class Employeedetails {
-	int empid;
-	String empname;
-	double empsalary;
+        ● Create a new class Employee 
+        ● Add member variables: id and age of type int, name of type String and isPermanent of type boolean 
+        ● Now assign values 35.5 to age; See the error message. 
+        ● How can you avoid this error? Correct the error by casting. 
+        ● Make all the members protected 
+        ● Add amain method to it. Print message “Successfully started”. 
+        ● Compile the class. 
+*/
 
-	public Employeedetails(int empid, String empname, double empsalary) {
-		this.empid = empid;
-		this.empname = empname;
-		this.empsalary = empsalary;
-
-	}
-
-}
+package anudip.assignments;
 
 public class Employee {
 
+	// Protected member variables
+	protected int id;
+	protected int age;
+	protected String name;
+	protected boolean isPermanent;
+
 	public static void main(String[] args) {
-		Scanner scn = new Scanner(System.in);
-		System.out.print("How many Employee details you will be enter: ");
-		int size = scn.nextInt();
 
-		Employeedetails employee[] = new Employeedetails[size];
-		System.out.println();
-		System.out.println("Enter a Employee details one by one: ");
-		System.out.println("--------------------------------------");
-		for (int i = 0; i < employee.length; i++) {
-			System.out.print("Enter " + (i + 1) + ".Employee id: ");
-			int empid = scn.nextInt();
-			System.out.print("Enter " + (i + 1) + ".Employee name: ");
-			String empname = scn.next();
-			System.out.print("Enter " + (i + 1) + ".Employee salary: ");
-			double empsalary = scn.nextDouble();
-			System.out.println();
+		Employee emp = new Employee();
 
-			employee[i] = new Employeedetails(empid, empname, empsalary);
-		}
-		System.out.println();
-		System.out.println("**** Employee Details ****");
-		for (int i = 0; i < employee.length; i++) {
-			System.out.println("===========================");
-			System.out.println("Employee id: " + employee[i].empid);
-			System.out.println("Employee Name: " + employee[i].empname);
-			System.out.println("Employee Salary: " + employee[i].empsalary);
-		}
+		// Assigning values
+		emp.id = 101;
+		emp.age = (int) 35.5; // Casting double to int
+		emp.name = "Naveen";
+		emp.isPermanent = true;
+		
+		System.out.println("Successfully started");
 
-		scn.close();
 	}
 
 }
